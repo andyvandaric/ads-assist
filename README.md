@@ -1,67 +1,39 @@
-# Astro Idol
+# Ads Assist
 
-Landing page template for mirco SaaS products
+**Ads Assist** is an advanced platform designed to streamline and optimize your Google Ads campaigns. By leveraging automation and intelligent tools, Ads Assist empowers businesses to maximize performance, save time, and improve ROI.
 
-### Live demo
-(https://idol.indiebold.com/)
+This repository hosts the landing page for Ads Assist, which is used to promote the platform and serves as a requirement for the Google Ads API Token Application.
 
-### Upgrade to Astrodol Pro version
-(https://idolpro.indiebold.com/)
+## 🚀 Key Features of Ads Assist
 
+1. **Automated Keyword Research**  
+  Save time by automating the keyword research process to identify the most effective keywords for your campaigns.
+  
+2. **Campaign Performance Analysis**  
+  Gain actionable insights by analyzing your campaigns' performance to improve results and reach.
+  
+3. **Budget Optimization**  
+  Allocate your ad spend efficiently to achieve the maximum return on investment (ROI) without overspending.
+  
+4. **Automated Bidding Strategies**  
+  Simplify bidding processes with AI-powered strategies to ensure cost-effective outcomes while saving time.
+  
+5. **Secure Integration**  
+  Seamlessly integrate with the Google Ads API using OAuth2 for secure data authorization and management.
+  
+6. **Intelligent Recommendations**  
+  Receive data-driven recommendations to fine-tune your ads, budgets, and strategies for optimal results.
+  
 
-## 🚀 Project Structure
+## 📋 How It Works
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```
-/
-├── public/
-│   └── favicon.svg
-├── src/
-    ├── assets/
-│   ├── components/
-│   │   └── Brief.astro
-        └── Customer.astro
-        └── Footer.astro
-        └── Header.astro
-        └── Hero.astro
-        └── Pricing.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## Preview
-![basics](./src/demo/idol-thumbnail.png)
-
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-
-
-
-
-
-## 👀 Curious to Explore More?
-
-Check out [LAB-CH3](https://github.com/LaB-CH3) for a growing collection of current and future templates.
-
-If you’ve found this helpful, consider fueling my creativity!  
-[![Buy me a coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/d2OuR1c)
+1. **Getting Started**:
+  
+  - Sign up and create an account on the Ads Assist platform.
+  - Securely connect your Google Ads account via OAuth2 authorization.
+  - Start using Ads Assist tools for keyword research, budget control, and strategy planning.
+2. **Platform Features**:
+  
+  - Campaign optimization powered by advanced automation tools.
+  - Real-time recommendations based on your Google Ads data.
+  - Budget management to maximize ROI and minimize wasted spend.
