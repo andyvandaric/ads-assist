@@ -2,8 +2,6 @@
 
 **Ads Assist** is an advanced platform designed to streamline and optimize your Google Ads campaigns. By leveraging automation and intelligent tools, Ads Assist empowers businesses to maximize performance, save time, and improve ROI.
 
-This repository hosts the landing page for Ads Assist, which is used to promote the platform and serves as a requirement for the Google Ads API Token Application.
-
 ## 🚀 Key Features of Ads Assist
 
 1. **Automated Keyword Research**  
