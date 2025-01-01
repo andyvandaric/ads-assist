@@ -1,0 +1,104 @@
+---
+// Import assets
+import Accurate from '../assets/accurate.svg';
+import Efficient from '../assets/efficient.svg';
+import Organized from '../assets/folder.svg';
+import Secure from '../assets/lock.svg';
+import Savings from '../assets/savings.svg';
+---
+
+<section class="key-benefits" id="key-benefits">
+  <div class="container">
+    <h2 class="h2-title center">Why Choose Ads Assist?</h2>
+    <p class="m-paragraph center">Discover the top benefits of using our platform to streamline and optimize your Google Ads campaigns.</p>
+    
+    <div class="benefits-grid">
+      <!-- Accurate -->
+      <div class="benefit-card">
+        <img src={Accurate} alt="Accurate" class="benefit-icon" />
+        <h3 class="benefit-title">Accurate</h3>
+        <p class="benefit-desc">Deliver precise ad targeting to reach your ideal audience effectively.</p>
+      </div>
+
+      <!-- Efficient -->
+      <div class="benefit-card">
+        <img src={Efficient} alt="Efficient" class="benefit-icon" />
+        <h3 class="benefit-title">Efficient</h3>
+        <p class="benefit-desc">Save time with intelligent automation for seamless campaign management.</p>
+      </div>
+
+      <!-- Savings -->
+      <div class="benefit-card">
+        <img src={Savings} alt="Savings" class="benefit-icon" />
+        <h3 class="benefit-title">Savings</h3>
+        <p class="benefit-desc">Maximize ROI while minimizing unnecessary ad spend.</p>
+      </div>
+
+      <!-- Secure -->
+      <div class="benefit-card">
+        <img src={Secure} alt="Secure" class="benefit-icon" />
+        <h3 class="benefit-title">Secure</h3>
+        <p class="benefit-desc">Ensure your campaigns are protected with robust data security.</p>
+      </div>
+
+      <!-- Organized -->
+      <div class="benefit-card">
+        <img src={Organized} alt="Organized" class="benefit-icon" />
+        <h3 class="benefit-title">Organized</h3>
+        <p class="benefit-desc">Stay on top of your campaigns with intuitive and organized tools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style lang="scss">
+.key-benefits {
+  padding: 60px 20px;
+  background-color: var(--tenary);
+
+  .h2-title {
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+  }
+
+  .m-paragraph {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+  }
+
+  .benefit-card {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: translateY(-5px);
+    }
+
+    .benefit-icon {
+      width: 60px;
+      margin-bottom: 15px;
+    }
+
+    .benefit-title {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .benefit-desc {
+      font-size: 1.4rem;
+      color: #555;
+    }
+  }
+}
+</style>

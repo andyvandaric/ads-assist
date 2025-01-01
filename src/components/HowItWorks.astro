@@ -1,0 +1,114 @@
+<section class="how-it-works-section" id="how-it-works">
+    <div class="container">
+      <h2 class="h2-title center">How It Works?</h2>
+      <p class="m-paragraph center">
+        Discover how Ads Assist integrates with Google Ads API to optimize your campaigns effortlessly.
+      </p>
+  
+      <div class="how-it-works-grid">
+        <div class="how-item animate-fade">
+          <h3 class="how-title">Getting Started</h3>
+          <p class="s-paragraph">Follow these simple steps to start using Ads Assist:</p>
+          <ul class="how-list">
+            <li>Step 1: Sign up and create your account.</li>
+            <li>Step 2: Connect your Google Ads account using OAuth2 authentication.</li>
+            <li>Step 3: Access tools for automating keyword research, budget optimization, and bidding strategies.</li>
+          </ul>
+        </div>
+        <div class="how-item animate-fade">
+          <h3 class="how-title">Platform Features</h3>
+          <p class="s-paragraph">
+            Our platform works seamlessly by leveraging Google Ads API to fetch real-time campaign data. It automates:
+          </p>
+          <ul class="how-list">
+            <li>Keyword research to discover high-performing keywords effortlessly.</li>
+            <li>Budget allocation to maximize ROI without overspending.</li>
+            <li>Bidding strategies for real-time competitive advantage.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <style lang="scss">
+  .how-it-works-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+  
+    .h2-title {
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+    }
+  
+    .m-paragraph {
+      font-size: 1.6rem;
+      margin-bottom: 30px;
+      color: #555;
+    }
+  
+    .how-it-works-grid {
+      display: grid;
+      grid-template-columns: 1fr; /* Default untuk mobile */
+      gap: 30px;
+  
+      @media (min-width: 768px) {
+        grid-template-columns: 1fr 1fr; /* Dua kolom untuk desktop */
+      }
+    }
+  
+    .how-item {
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+      opacity: 0; /* Untuk animasi */
+      transform: translateY(20px); /* Untuk animasi */
+      transition: opacity 0.5s ease, transform 0.5s ease;
+  
+      &.animate-fade {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .how-title {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+  
+    .s-paragraph {
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+      color: #555;
+      line-height: 1.6;
+    }
+  
+    .how-list {
+      list-style: disc;
+      margin-left: 20px;
+  
+      li {
+        margin-bottom: 10px;
+        font-size: 1.4rem;
+      }
+    }
+  }
+  </style>
+  
+  <script>
+    // Animasi ketika elemen masuk ke viewport
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("animate-fade");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+  
+    document.querySelectorAll(".how-item").forEach((el) => observer.observe(el));
+  </script>
+  

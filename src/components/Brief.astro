@@ -1,0 +1,98 @@
+---
+
+import Lock from '../assets/lock.svg';
+import Money from '../assets/money.svg';
+import Research from '../assets/research.svg';
+import Budget from '../assets/budget.svg';
+---
+
+<section class="product-brief" id="features">
+  <div class="container">
+      <div class="product-brief-items">
+          <h2 class="h2-title">Empower Your Ads Strategy</h2>
+          <p class="m-paragraph m-margin">Unlock the potential of your campaigns with tools tailored for seamless ad management and optimization.</p>
+
+          <div class="brief-items-grid">
+              <!-- Keyword Research Automation -->
+              <div class="feature-card">
+                  <img src={Research} alt="Keyword Research" class="feature-icon">
+                  <h3 class="feature-title">Keyword Research Automation</h3>
+                  <p class="feature-desc">Discover high-performing keywords effortlessly to maximize campaign reach and effectiveness.</p>
+              </div>
+
+              <!-- Campaign Performance Analysis -->
+              <div class="feature-card">
+                  <img src={Money} alt="Campaign Analysis" class="feature-icon">
+                  <h3 class="feature-title">Campaign Performance Analysis</h3>
+                  <p class="feature-desc">Analyze your campaign data with precision and uncover insights to improve results.</p>
+              </div>
+
+              <!-- Budget Optimization -->
+              <div class="feature-card">
+                  <img src={Budget} alt="Budget Optimization" class="feature-icon">
+                  <h3 class="feature-title">Budget Optimization</h3>
+                  <p class="feature-desc">Allocate your ad spend efficiently to achieve maximum ROI without overspending.</p>
+              </div>
+
+              <!-- Automated Bidding Strategies -->
+              <div class="feature-card">
+                  <img src={Lock} alt="Bidding Strategies" class="feature-icon">
+                  <h3 class="feature-title">Automated Bidding Strategies</h3>
+                  <p class="feature-desc">Automate your bidding process to ensure you stay competitive while saving time.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<style lang="scss">
+.product-brief {
+  background-color: var(--tenary);
+  padding: 50px 0;
+
+  .h2-title {
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 20px;
+  }
+
+  .m-paragraph {
+      text-align: center;
+      font-size: 1.6rem;
+      max-width: 800px;
+      margin: 0 auto 40px auto;
+  }
+
+  .brief-items-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+      justify-items: center;
+      text-align: center;
+  }
+
+  .feature-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+
+      .feature-icon {
+          width: 60px;
+          height: 60px;
+      }
+
+      .feature-title {
+          font-size: 1.8rem;
+          font-weight: bold;
+          color: #222;
+      }
+
+      .feature-desc {
+          font-size: 1.4rem;
+          color: #555;
+          line-height: 1.6;
+      }
+  }
+}
+</style>
