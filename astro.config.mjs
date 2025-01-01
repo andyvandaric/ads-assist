@@ -1,7 +1,6 @@
 import { defineConfig } from "astro/config";
 
-// https://astro.build/config
 export default defineConfig({
-  output: "static", // Pastikan outputnya adalah static
-  base: "/ads-assist/", // Jika ini bukan repository utama (sesuai nama repository GitHub Anda)
+  output: "static", // Output sebagai file statis, diperlukan untuk Vercel
+  base: "/", // Base path tidak diperlukan di Vercel karena semua resource otomatis di-root
 });
