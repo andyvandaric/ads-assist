@@ -1,11 +1,12 @@
 {
-  "name": "idol",
+  "name": "ads-assist",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "deploy": "gh-pages -d dist",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -14,6 +15,7 @@
     "astro": "^2.10.15"
   },
   "devDependencies": {
+    "gh-pages": "^6.2.0",
     "sass": "^1.83.0"
   }
 }
